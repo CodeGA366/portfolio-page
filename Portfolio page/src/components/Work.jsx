@@ -6,7 +6,7 @@ const Work = () => {
     return (
         <section className='page-wrapper'>
             <section className='page-section'>
-                <h2 id='work'>Work</h2>
+                <h2 id='work'>Portfollio</h2>
                 <div className='flex-container'>
                     <div className='surf-report'>
                         <figure className='flex-item'>
