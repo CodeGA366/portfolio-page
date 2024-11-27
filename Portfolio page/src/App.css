@@ -1,9 +1,70 @@
-.hero-banner{
-  background-color: #f8f9fa;
-  padding: 20px;
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main-content{
+  flex: 1;
+}
+
+.bg-custom{
+  background-color: #343a40;
+}
+
+.nav-link{
+  transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+
+.nav-link:hover{
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.navbar-brand{
+  transition: transform 0.3s ease, font-weight 0.3s ease;
+}
+
+.navbar-brand:hover{
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.text-custom{
+  color: white !important;
+}
+
+.footer{
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
   text-align: center;
 }
 
-.page-wrapper {
-  margin: 20px auto;
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links i{
+  transition: transform 0.3s ease;
+}
+
+.footer-links a:hover i{
+  transform: scale(2.2) rotate(360deg);
 }
