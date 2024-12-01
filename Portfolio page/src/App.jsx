@@ -13,6 +13,7 @@ import Footer from './components/Footer.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 //defined styled component
 const HomeContainer = styled.div`

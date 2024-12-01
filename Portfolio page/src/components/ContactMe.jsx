@@ -1,5 +1,6 @@
 //import react
 import React, { useState } from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 //ContactMe component
@@ -44,6 +45,7 @@ const ContactMe = () => {
                             value={formData.name}
                             onChange={handleChange}
                             required
+                            placeholder='Enter your name'
                         />
                         <label htmlFor='email'>Email:</label>
                         <input
@@ -53,6 +55,7 @@ const ContactMe = () => {
                             value={formData.email}
                             onChange={handleChange}
                             required
+                            placeholder='Enter your email'
                         />
                         <label htmlFor='message'>Message:</label>
                         <textarea
@@ -61,6 +64,7 @@ const ContactMe = () => {
                             value={formData.message}
                             onChange={handleChange}
                             required
+                            placeholder='Enter your message'
                         />
                         
                         <button type='submit'>Submit</button>

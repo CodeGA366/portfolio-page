@@ -1,53 +1,51 @@
 //import react
 import React from 'react';
+//import Card component
+import Card from './card';
 
 //Work component
 const Work = () => {
+    const projects = [
+        {
+            title: "Readme Generator",
+            image: "../src/Images/readme.png",
+            link: "https://github.com/CodeGA366/readme-generator-"
+        },
+        {
+            title: "Vehicle Builder",
+            image: "../src/Images/Vehicle.png",
+            link: "https://github.com/CodeGA366/ultimate-vehicle-builder"
+        },
+        {
+            title: "Employee Tracker",
+            image: "../src/Images/employee.png",
+            link: "https://github.com/CodeGA366/employee-tracker"
+        },
+        {
+            title: "Weather Dashboard",
+            image: "../src/Images/weather.png",
+            link: "https://github.com/CodeGA366/weather-app"
+        },
+        { 
+            title: "Basketball Stats",
+            image: "../src/Images/basketball.png",
+            link: "https://github.com/MarkSian/amg-basketball-group"
+        }
+
+    ];
     return (
         <section className='page-wrapper'>
             <section className='page-section'>
-                <h2 id='work'>Portfollio</h2>
+                <h2 id='work'>Portfolio</h2>
                 <div className='flex-container'>
-                    <div className='surf-report'>
-                        <figure className='flex-item'>
-                            <div>
-                                <h3>Surf Report</h3>
-                            </div>
-                        </figure>
-                    </div>
-                    <div className='led-wall'>
-                        <figure className='flex-item'>
-                            <div>
-                                <h3>Led Wall</h3>
-                            </div>
-                        </figure>
-                    </div>
-                    <div className='react-calc'>
-                        <figure className='flex-item'>
-                            <div>
-                                <h3>React Calculator</h3>
-                            </div>
-                        </figure>
-                    </div>
-                    <div className='pastel-puzzles'>
-                        <figure className='flex-item'>
-                            <div>
-                                <h3>Pastel Puzzles</h3>
-                            </div>
-                        </figure>
-                    </div>
-                    <div className='run-buddy'>
-                        <figure className='flex-item'>
-                            <div>
-                                <h3>Run Buddy</h3>
-                            </div>
-                        </figure>
-                    </div>
+                    {projects.map((project, index) => (
+                        <Card Key={index} title={project.title} image={project.image} link={project.link} />
+                    ))}
                 </div>
             </section>
         </section>
-    );
-};
+    )
+}
 
 //export Work component
 export default Work;
