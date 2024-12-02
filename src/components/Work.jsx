@@ -1,34 +1,40 @@
 //import react
 import React from 'react';
 //import Card component
-import Card from './Card';
+import Card from './Card.jsx';
+//import images
+import readme from '../Images/readme.png';
+import vehicle from '../Images/Vehicle.png';
+import employee from '../Images/employee.png';
+import weather from '../Images/weather.png';
+import basketball from '../Images/basketball.png';
 
 //Work component
 const Work = () => {
     const projects = [
         {
             title: "Readme Generator",
-            image: "../src/Images/readme.png",
+            image: readme,
             link: "https://github.com/CodeGA366/readme-generator-"
         },
         {
             title: "Vehicle Builder",
-            image: "../src/Images/Vehicle.png",
+            image: vehicle,
             link: "https://github.com/CodeGA366/ultimate-vehicle-builder"
         },
         {
             title: "Employee Tracker",
-            image: "../src/Images/employee.png",
+            image: employee,
             link: "https://github.com/CodeGA366/employee-tracker"
         },
         {
             title: "Weather Dashboard",
-            image: "../src/Images/weather.png",
+            image: weather,
             link: "https://github.com/CodeGA366/weather-app"
         },
         { 
             title: "Basketball Stats",
-            image: "../src/Images/basketball.png",
+            image: basketball,
             link: "https://github.com/MarkSian/amg-basketball-group"
         }
 
