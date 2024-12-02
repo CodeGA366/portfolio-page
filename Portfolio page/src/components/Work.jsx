@@ -1,7 +1,7 @@
 //import react
 import React from 'react';
 //import Card component
-import Card from './card';
+import Card from './Card';
 
 //Work component
 const Work = () => {
