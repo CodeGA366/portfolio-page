@@ -1,7 +1,7 @@
 //import react and app.css
 import React from 'react';
 import '../App.css';
-import 'font-awesome/css/font-awesome.min.css';
+
 
 //Card component
 const Card = ({ title, image, link }) => {
