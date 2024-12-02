@@ -4,7 +4,6 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 //import components
 import Header from './components/Header.jsx';
-import HeroBanner from './components/HeroBanner';
 import AboutMe from './components/AboutMe.jsx';
 import Work from './components/Work.jsx';
 import ContactMe from './components/ContactMe.jsx';
