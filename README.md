@@ -3,7 +3,7 @@
 
 ## Description
 A page that dispslays information about me as well as my most recent projects/resume!
-[![Portfolio!](/src/Images/screenshot.png)(https://aboutgreg.netlify.app/work)]
+[![Portfolio!](/src/Images/screenshot.png)(https://aboutgreg.netlify.app/)]
 
 ## Table of Contents
 - [Installation](#installation)
