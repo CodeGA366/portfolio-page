@@ -3,7 +3,7 @@ import React from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 //import components
-import Header from './components/header.jsx';
+import Header from './components/Header';
 import HeroBanner from './components/HeroBanner';
 import AboutMe from './components/AboutMe';
 import Work from './components/Work';
