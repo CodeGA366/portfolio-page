@@ -3,12 +3,12 @@ import React from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 //import components
-import Header from './components/Header';
+import Header from './components/Header.jsx';
 import HeroBanner from './components/HeroBanner';
-import AboutMe from './components/AboutMe';
-import Work from './components/Work';
-import ContactMe from './components/ContactMe';
-import Resume from './components/Resume';
+import AboutMe from './components/AboutMe.jsx';
+import Work from './components/Work.jsx';
+import ContactMe from './components/ContactMe.jsx';
+import Resume from './components/Resume.jsx';
 import Footer from './components/Footer.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
