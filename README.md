@@ -14,7 +14,7 @@ A page that dispslays information about me as well as my most recent projects/re
 - [License](#license)
 
 ## Installation
-N/A
+No installation required! just click the link below!
 
 ## Usage
 Use this project to learn more about me! check out the link below!
@@ -25,7 +25,7 @@ This project is licensed under the MIT license.
 [MIT](https://opensource.org/licenses/MIT)
 
 ## Contributing
-N/A
+Open to any ideas and ready to collaborate!
 
 ## Tests
 N/A
