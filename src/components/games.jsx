@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../App.css';
 import Card from './Card.jsx';
 import snake from '../Images/snake.webp';
-import ticTacToe from '../Images/ticTacToe.png';
+import ticTacToe from '../Images/tictactoe.png';
 import employee from '../Images/employee.png';
 import weather from '../Images/weather.png';
 import basketball from '../Images/basketball.png';
