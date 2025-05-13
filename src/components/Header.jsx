@@ -28,6 +28,15 @@ const Header = () => {
                             <li className="nav-item text-custom">
                                 <Link className="nav-link text-custom" to='/resume'>Resume</Link>
                             </li>
+                            <li className='nav-item text-custom'>
+                                <Link className="nav-link text-custom" to='/videos'>Videos</Link>
+                            </li>
+                            <li className='nav-item text-custom'>
+                                <Link className="nav-link text-custom" to='/games'>Games</Link>
+                            </li>
+                            <li className='nav-item text-custom'>
+                                <Link className="nav-link text-custom" to='/html-css'>Templates</Link>
+                            </li>
                         </ul>
                     </div>
                 </div>

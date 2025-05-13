@@ -1,0 +1,530 @@
+/* General Template Styles */
+.template {
+    padding: 20px;
+    border-radius: var(--border-radius);
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    font-family: var(--body-font);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.template:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/*style 1*/
+.style1 {
+    background-color: #f9f9f9;
+    color: var(--text-color);
+}
+
+.style1 button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.style1 button:hover {
+    background-color: var(--secondary-color);
+}
+
+/*style 2*/
+.style2 {
+    background-color: #fff3cd;
+    color: #856404;
+    font-family: 'Georgia', serif;
+}
+
+.style2 button {
+    background-color: var(--accent-color);
+    color: #856404;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.style2 button:hover {
+    background-color: #e0a800;
+}
+
+/*style 3*/
+.style3 {
+    background-color: #e9ecef;
+    color: #495057;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.style3 button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.style3 button:hover {
+    background-color: #5a6268;
+}
+
+/* Graph placeholder */
+.graph-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    border: 1px dashed #aaa;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: #665;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button.submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Flex Container for Sidebar and Main Content */
+.row {
+    display: flex;
+    min-height: 100vh; /* Ensure the container spans the full height of the viewport */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    flex: 0 0 25%; /* Sidebar takes 25% of the width */
+    max-width: 300px; /* Optional: Limit the sidebar width */
+    background: linear-gradient(180deg, #6a1b9a, #4a148c); /* Purple gradient background */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Sidebar stays visible while scrolling */
+    top: 0; /* Stick to the top of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto; /* Scrollable if content overflows */
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff; /* White text for the heading */
+}
+
+.sidebar .controls h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #e0e0e0; /* Light grey for section headings */
+}
+
+.sidebar button {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* White text for buttons */
+    background-color: #7b1fa2; /* Purple button background */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar button:hover {
+    background-color: #4a148c; /* Darker purple on hover */
+    transform: translateX(5px); /* Slight movement on hover */
+}
+
+.sidebar button i {
+    font-size: 18px;
+    color: #e0e0e0; /* Light grey for icons */
+}
+
+/* Sidebar Button Groups */
+.sidebar .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Main Content Area */
+.preview {
+    flex: 1; /* Main content takes the remaining width */
+    background-color: #ffffff; /* White background for a clean look */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a card-like appearance */
+    padding: 20px; /* Add padding for spacing */
+    margin-top: 20px; /* Add spacing from the top */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    margin-left: 20px; /* Add margin to separate from the sidebar */
+}
+
+.preview:hover {
+    transform: translateY(-5px); /* Slight upward movement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.preview h1 {
+    font-size: 24px; /* Larger font size for headings */
+    font-weight: bold;
+    color: #050505; /* Purple color for headings */
+    margin-bottom: 15px;
+}
+
+.preview p {
+    font-size: 16px; /* Standard font size for paragraphs */
+    color: #050505; /* Grey color for text */
+    line-height: 1.6; /* Improve readability */
+}
+
+.preview button {
+    background-color: #6a1b9a; /* Purple button background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.preview button:hover {
+    background-color: #4a148c; /* Darker purple on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.preview .form-group {
+    margin-bottom: 15px; /* Add spacing between form fields */
+}
+
+.preview input,
+.preview textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.preview textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.controls.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.controls.mb-4 h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.controls.mb-4 button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls.mb-4 button:hover {
+    background-color: #0056b3;
+}
+
+.controls.mb-4 button i {
+    margin-right: 0.5rem;
+}
+
+.controls {
+    margin-bottom: 1.5rem;
+}
+
+.controls h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.controls button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    background-color: #6c757d;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #5a6268;
+}
+
+.controls button i {
+    margin-right: 0.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(180deg, #6a1b9a, #4a148c);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-section .cta-button {
+    background-color: #ffc107;
+    color: #4a148c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-section .cta-button:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+}
+
+/* Features Section */
+.features-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.features-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4a148c;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.feature i {
+    font-size: 36px;
+    color: #080808;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonials-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #070707;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.testimonial p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.testimonial h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #080808;
+}
+
+/* Footer */
+.landing-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a148c;
+    color: white;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.landing-footer p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.landing-footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    
+}
+
+.landing-footer .social-links a:hover {
+    color: #ffc107;
+    transform: scale(2.2) rotate(360deg);
+}
+
+button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .template {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .template h1 {
+        font-size: 1.5rem;
+    }
+
+    .template button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .sidebar {
+        flex: 0 0 100%; /* Sidebar takes full width on smaller screens */
+        max-width: 100%;
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .preview {
+        margin-left: 0; /* Remove margin for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}

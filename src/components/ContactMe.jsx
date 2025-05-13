@@ -1,5 +1,6 @@
 //import react
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
@@ -12,6 +13,8 @@ const ContactMe = () => {
         message: ''
     });
 
+    const [successMessage, setSuccessMessage] = useState('');
+        
     //handle input change
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -20,17 +23,36 @@ const ContactMe = () => {
             [name]: value
         });
     };
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        //handle form data send it to api or log it
-        console.log('Form submitted:', formData);
-        //reset form
-        setFormData({
-            name: '',
-            email: '',
-            message: ''
-        });
+
+        //emailjs parameters
+        const templateParams = {
+            from_name: formData.name,
+            from_email: formData.email,
+            message: formData.message
+        }
+
+        //send email using emailjs
+        emailjs.send('service_ydani6b', 'template_ohq8n9d', templateParams, 'ZxYcyQPHB_m7icvUV')
+            .then(
+                (response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    setSuccessMessage('Your message has been sent successfully!');
+                    setFormData({
+                        name: '',
+                        email: '',
+                        message: ''
+                    });
+                },
+                (error) => {
+                    console.log('FAILED...', error);
+                    setSuccessMessage('Failed to send your message. Please try again later.');
+                }
+            );
     };
+
     return(
         <section className='page-wrapper'>
             <section className='page-section'>
@@ -66,10 +88,10 @@ const ContactMe = () => {
                             required
                             placeholder='Enter your message'
                         />
-                        
                         <button type='submit'>Submit</button>
                     </div>
                 </form>
+                {successMessage && <p>{successMessage}</p>}
             </section>
         </section>
     )

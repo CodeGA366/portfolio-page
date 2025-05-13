@@ -1,30 +1,26 @@
-//import react
-import React, { useState} from 'react';
-//import Card component
+import React, { useState } from 'react';
+import '../App.css';
 import Card from './Card.jsx';
-//import images
-import readme from '../Images/readme.png';
-import vehicle from '../Images/Vehicle.png';
+import snake from '../Images/snake.webp';
+import ticTacToe from '../Images/ticTacToe.png';
 import employee from '../Images/employee.png';
 import weather from '../Images/weather.png';
 import basketball from '../Images/basketball.png';
 
-//Work component
-const Work = () => {
+const Game = () => {
     const [selectedCategory, setSelectedCategory] = useState('websites');
 
-    //array of websites and apps
     const websites = [
         {
-            title: "Readme Generator",
-            image: readme,
-            link: "https://github.com/CodeGA366/readme-generator-"
+            title: "Snake Game",
+            image: snake,
+            link: "/snake"
         },
         {
-            title: "Vehicle Builder",
-            image: vehicle,
-            link: "https://github.com/CodeGA366/ultimate-vehicle-builder"
-        },
+            title: "Tic Tac Toe",
+            image: ticTacToe,
+            link: "/tictactoe"
+        }
     ];
 
     const apps = [
@@ -38,7 +34,7 @@ const Work = () => {
             image: weather,
             link: "https://github.com/CodeGA366/weather-app"
         },
-        { 
+        {
             title: "Basketball Stats",
             image: basketball,
             link: "https://github.com/MarkSian/amg-basketball-group"
@@ -54,19 +50,19 @@ const Work = () => {
             <div className="row" style={{ display: 'flex' }}>
                 {/* Sidebar */}
                 <div className="col-md-3 bg-light sidebar p-3">
-                    <h2>Work Menu</h2>
+                    <h2>Games Menu</h2>
                     <div className="controls">
                         <button
                             className="btn btn-primary btn-block mb-2"
                             onClick={() => handleCategoryChange('websites')}
                         >
-                            Front-End
+                            JavaScript Games
                         </button>
                         <button
                             className="btn btn-primary btn-block mb-2"
                             onClick={() => handleCategoryChange('apps')}
                         >
-                            Full-Stack
+                            Other Languages
                         </button>
                     </div>
                 </div>
@@ -77,7 +73,7 @@ const Work = () => {
                         <div className="flex-container">
                             {selectedCategory === 'websites' && (
                                 <div className="section websites">
-                                    <h2 id="work">Front-End</h2>
+                                    <h2 id="work">JavaScript Games</h2>
                                     <div className="flex-container">
                                         {websites.map((project, index) => (
                                             <Card
@@ -92,7 +88,7 @@ const Work = () => {
                             )}
                             {selectedCategory === 'apps' && (
                                 <div className="section apps">
-                                    <h2>Full-Stack</h2>
+                                    <h2 id="work">Other Languages</h2>
                                     <div className="flex-container">
                                         {apps.map((project, index) => (
                                             <Card
@@ -106,6 +102,7 @@ const Work = () => {
                                 </div>
                             )}
                         </div>
+                        <p>Games will be added soon!</p>
                     </section>
                 </div>
             </div>
@@ -113,5 +110,4 @@ const Work = () => {
     );
 };
 
-//export Work component
-export default Work;
+export default Game;
