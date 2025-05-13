@@ -59,7 +59,7 @@ const Work = () => {
             <div className="row" style={{ display: 'flex' }}>
                 {/* Sidebar */}
                 <div className="col-md-3 bg-light sidebar p-3">
-                    <h2>Work Menu</h2>
+                    <h2>Portfolio</h2>
                     <div className="controls">
                         <button
                             className="btn btn-primary btn-block mb-2"
