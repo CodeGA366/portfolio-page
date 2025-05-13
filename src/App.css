@@ -115,8 +115,8 @@ html, body{
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: white !important; /* Change text color to white */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
   padding: 10px;
   border-radius: 5px;
   text-align: center;

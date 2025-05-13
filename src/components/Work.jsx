@@ -6,7 +6,7 @@ import Card from './Card.jsx';
 import readme from '../Images/readme.png';
 import vehicle from '../Images/Vehicle.png';
 import employee from '../Images/employee.png';
-import weather from '../Images/weather.png';
+import weather from '../Images/weatherApp.png';
 import basketball from '../Images/basketball.png';
 
 //Work component
@@ -25,6 +25,11 @@ const Work = () => {
             image: vehicle,
             link: "https://github.com/CodeGA366/ultimate-vehicle-builder"
         },
+        {
+            title: "CodeGa Weather",
+            image: weather,
+            link: "https://codegaweather.onrender.com/"
+        }
     ];
 
     const apps = [
